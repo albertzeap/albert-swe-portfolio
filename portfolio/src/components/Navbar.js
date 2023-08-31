@@ -10,38 +10,51 @@ export const NavBar = () =>{
 
 
     return(
-        <Container>
+        // <Container className="">
 
             <Navbar expand="lg" className="bg-transparent" sticky="top">
+                <Container>
+
                 <Navbar.Brand className="fw-bold d-flex justify-content-start">
-                    <AnchorLink href='#home' className="navLink text-white">Albert Paez</AnchorLink>
+                    <AnchorLink href='#home' className="navLink text-uppercase">A.P.</AnchorLink>
                 </Navbar.Brand>
-                <Navbar.Toggle id="offcanvasNavbarToggle" className="navToggle border border-0 bg-white" aria-controls="offcanvasNavbar-expand-lg"/>
-                <Navbar.Offcanvas id="offcanvasNavbar-expand-lg" aria-labelledby="offcanvasNavbarLabel-expand-lg" placement="end" className="text-bg-dark">
-                    <Offcanvas.Header closeButton className="text-color-white bg-white">
-                        <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg" className="fw-bold text-black">Menu</Offcanvas.Title>
+                <Navbar.Toggle id="offcanvasNavbarToggle" className="navToggle border border-0" aria-controls="offcanvasNavbar-expand-lg"/>
+                <Navbar.Offcanvas id="offcanvasNavbar-expand-lg" aria-labelledby="offcanvasNavbarLabel-expand-lg" placement="end" className="navOffcanvas">
+                    <Offcanvas.Header closeButton className="text-color-white">
+                        <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg" className="fw-bold text-white">Menu</Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body className="justify-content-end flex-grow-1 align-items-center">
                         <Nav>
-                            <Nav.Item className="px-3 py-3">
-                                <AnchorLink href="#home" className="navLink fw-bold text-white">
-                                    Home
+                            <Nav.Item className="px-3 py-2">
+                                <AnchorLink href="#home" className="navLink fw-bold">
+                                    // home
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-3">
-                                <AnchorLink href="#about" className="navLink fw-bold text-white">
-                                    About
+                            <Nav.Item className="px-3 py-2">
+                                <AnchorLink href="#about" className="navLink fw-bold">
+                                    // about
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-3">
-                                <AnchorLink href="#skills" className="navLink fw-bold text-white">
-                                    Skills
+                            <Nav.Item className="px-3 py-2">
+                                <AnchorLink href="#skills" className="navLink fw-bold">
+                                    // skills
+                                </AnchorLink>
+                            </Nav.Item>
+                            <Nav.Item className="px-3 py-2">
+                                <AnchorLink href="#projects" className="navLink fw-bold">
+                                    // projects
+                                </AnchorLink>
+                            </Nav.Item>
+                            <Nav.Item className="px-3 py-2">
+                                <AnchorLink href="#contact" className="navLink fw-bold">
+                                    // contact
                                 </AnchorLink>
                             </Nav.Item>
                         </Nav>
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
+            </Container>
             </Navbar>
-        </Container>
+        // </Container>
     );
 }

@@ -1,0 +1,78 @@
+/* 
+    MATTE: #414141
+    FRESH: #CCDFCB
+    WATERMELON: #FF6A5C
+    TEAL: #056571
+*/
+
+body {
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    font-family: Arial, Helvetica, sans-serif;
+  
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1632292220916-e9c34dd75db2');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 120vh; */
+  }
+
+
+#home{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1632292220916-e9c34dd75db2'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1623150502742-6a849aa94be4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3000&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    /* background-color: #A9B7C0; */
+    height: 100vh;
+    
+}
+
+#about{
+    /* background-color: #414141 ; */
+    background-color: #F7F7F7;
+
+    /* background-image: linear-gradient(to right, #CCDFCB 0%, #CCDFCB 10%, #414141 10%, #414141 90%, #CCDFCB 90%, #CCDFCB 100% ); */
+    /* height: 90vh; */
+}
+
+#skills{
+    background-color: #CCDFCB;
+    /* background-image: linear-gradient(to right, #056571 0%, #056571 10%, #CCDFCB 10%, #CCDFCB 90%, #056571 90%, #056571 100% ); */
+}
+
+.navToggle{
+    color: white;
+    background-color: white;
+    border-radius: 25px;
+}
+.navOffcanvas{
+    background-color: #CCDFCB;
+   
+}
+.navLink{
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: #FF6A5C;
+}
+
+.paragraphs{
+    text-align: justify;
+    hyphens: auto;
+    text-justify:auto;
+    /* text-align:right; */
+}
+
+.sectionHeader1{
+    color: #FF6A5C;
+}
