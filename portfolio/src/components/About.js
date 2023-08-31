@@ -8,7 +8,8 @@ export const About = () => {
     return(
         <Container className="py-5 w-75">
           
-                <h1 className="sectionHeader1 text-center fw-bold text-uppercase fs-1">So who am i?</h1>
+                <h1 className="sectionHeader1 text-center fw-bold text-uppercase fs-1 pt-3 pb-5">So who am i?</h1>
+                <hr></hr>
                 <Container className="py-4">
                   
                     {/* <Container className="d-flex justify-content-center align-items-center w-100 h-50 py-5">

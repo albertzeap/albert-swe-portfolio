@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/app.css"
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { Work } from "./components/Work";
 
 function App() {
   return (
@@ -24,8 +25,13 @@ function App() {
           <About/>
         </section>
 
+
         <section id="skills">
           <Skills/>
+        </section>
+        
+        <section id="work">
+          <Work/>
         </section>
 
         <section id="projects">

@@ -25,27 +25,32 @@ export const NavBar = () =>{
                     </Offcanvas.Header>
                     <Offcanvas.Body className="justify-content-end flex-grow-1 align-items-center">
                         <Nav>
-                            <Nav.Item className="px-3 py-2">
+                            <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#home" className="navLink fw-bold">
                                     // home
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-2">
+                            <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#about" className="navLink fw-bold">
                                     // about
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-2">
+                            <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#skills" className="navLink fw-bold">
                                     // skills
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-2">
+                            <Nav.Item className="px-2 py-2">
+                                <AnchorLink href="#work" className="navLink fw-bold">
+                                    // work
+                                </AnchorLink>
+                            </Nav.Item>
+                            <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#projects" className="navLink fw-bold">
                                     // projects
                                 </AnchorLink>
                             </Nav.Item>
-                            <Nav.Item className="px-3 py-2">
+                            <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#contact" className="navLink fw-bold">
                                     // contact
                                 </AnchorLink>
