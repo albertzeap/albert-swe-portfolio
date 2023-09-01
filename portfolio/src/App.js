@@ -1,15 +1,13 @@
 import { BrowserRouter} from "react-router-dom";
 import { NavBar } from "./components/Navbar";
-import Container from "react-bootstrap/Container"
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import { Skills } from "./components/Skills";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./styles/app.css"
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import { Work } from "./components/Work";
+import { Experience } from "./components/Experience";
 
 function App() {
   return (
@@ -25,13 +23,8 @@ function App() {
           <About/>
         </section>
 
-
-        <section id="skills">
-          <Skills/>
-        </section>
-        
-        <section id="work">
-          <Work/>
+        <section id="experience">
+          <Experience/>
         </section>
 
         <section id="projects">

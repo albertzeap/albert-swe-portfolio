@@ -27,32 +27,27 @@ export const NavBar = () =>{
                         <Nav>
                             <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#home" className="navLink fw-bold">
-                                    // home
+                                    {'//'} home
                                 </AnchorLink>
                             </Nav.Item>
                             <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#about" className="navLink fw-bold">
-                                    // about
+                                {'//'} about
                                 </AnchorLink>
                             </Nav.Item>
                             <Nav.Item className="px-2 py-2">
-                                <AnchorLink href="#skills" className="navLink fw-bold">
-                                    // skills
-                                </AnchorLink>
-                            </Nav.Item>
-                            <Nav.Item className="px-2 py-2">
-                                <AnchorLink href="#work" className="navLink fw-bold">
-                                    // work
+                                <AnchorLink href="#experience" className="navLink fw-bold">
+                                {'//'} experience
                                 </AnchorLink>
                             </Nav.Item>
                             <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#projects" className="navLink fw-bold">
-                                    // projects
+                                {'//'} projects
                                 </AnchorLink>
                             </Nav.Item>
                             <Nav.Item className="px-2 py-2">
                                 <AnchorLink href="#contact" className="navLink fw-bold">
-                                    // contact
+                                {'//'} contact
                                 </AnchorLink>
                             </Nav.Item>
                         </Nav>

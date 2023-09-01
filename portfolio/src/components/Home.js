@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import Button from 'react-bootstrap/Button';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsChevronDoubleDown } from 'react-icons/bs';
 import "../styles/home.css"

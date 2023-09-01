@@ -1,7 +1,7 @@
 /* 
     MATTE: #414141
     FRESH: #CCDFCB
-    WATERMELON: #FF6A5C
+    WATERMELON: #FF6A5C, #bd3e33
     TEAL: #056571
 */
 
@@ -31,21 +31,26 @@ body {
     background-size: cover;
     background-repeat: no-repeat; 
     /* background-color: #A9B7C0; */
-    height: 100vh;
+   
     
 }
 
 #about{
     /* background-color: #414141 ; */
-    background-color: #F7F7F7;
+    background-color: #f2f2f2;
 
     /* background-image: linear-gradient(to right, #CCDFCB 0%, #CCDFCB 10%, #414141 10%, #414141 90%, #CCDFCB 90%, #CCDFCB 100% ); */
-    /* height: 90vh; */
+ 
 }
 
-#skills{
+#experience{
     background-color: #CCDFCB;
+    /* height: 100vh; */
     /* background-image: linear-gradient(to right, #056571 0%, #056571 10%, #CCDFCB 10%, #CCDFCB 90%, #056571 90%, #056571 100% ); */
+}
+
+#projects{
+    background-color: #f2f2f2;
 }
 
 .navToggle{
@@ -74,8 +79,30 @@ body {
 }
 
 .sectionHeader1{
-    color: #FF6A5C;
+    color: #bd3e33;
 }
 .sectionHeader2{
     color: #414141;
 }
+
+.workExperience{
+    background-color: #CCDFCB;
+    border: none;
+    color: #CCDFCB;
+
+    border-right: solid 1px #414141;
+}
+
+.workButtons:hover, .workButtons:active{
+    color:#bd3e33;
+    background-color: #bd3e33;
+}
+
+.listItem{
+    /* list-style-type: '🔹'; */
+    /* list-style-type: url("../assets/bullet.svg"); */
+    list-style-type: '◾️';
+    /* padding-inline-start: 1ch; */
+}
+
+
