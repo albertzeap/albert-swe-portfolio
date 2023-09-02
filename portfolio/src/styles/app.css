@@ -105,4 +105,19 @@ body {
     /* padding-inline-start: 1ch; */
 }
 
+.projectLink{
+    text-decoration: none;
+    color: #bd3e33;
+}
+.projectLink:hover{
+    color: #414141;
+}
+.badge{
+    background-color: #bd3e33;
+}
+.projectBadge:hover{
+    background-color: #414141;
+}
+
+
 

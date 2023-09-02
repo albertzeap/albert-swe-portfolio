@@ -19,7 +19,7 @@ export const Experience = () => {
 
                 <Row>
                     <Col>
-                        <Container className="d-flex flex-column pb-5 w-75">
+                        <Container className="d-flex flex-column pb-5 w-50">
                             <Image src="https://cognixia.com/us/wp-content/uploads/2023/04/Cognixia-Logo_Ascendion-Co.png" />
                         </Container>
                     </Col>
