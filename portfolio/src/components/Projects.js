@@ -9,6 +9,7 @@ import {AiFillGithub} from "react-icons/ai"
 import { Link } from "react-router-dom";
 
 import furnitureLanding from "../assets/furnitureLanding.png"
+import githubTimelines from "../assets/githubTimelines.png"
 
 
 const favoriteProjects = [
@@ -18,6 +19,7 @@ const favoriteProjects = [
         subtitle: "A comprehensive e-commerce web application for buying and selling furniture products online.",
         liveLink: "https://furniture-hub.vercel.app",
         gitHubLink: "https://github.com/albertzeap/furniture-hub-ecommerce",
+        image: furnitureLanding,
         techStack: [
             {
                 name: "React"
@@ -41,6 +43,37 @@ const favoriteProjects = [
                 name: "Supabase (Postgres)"
             },
         ]
+    },
+    {
+        id: "2",
+        title: "Boba Slice",
+        subtitle: "Full stack app for a food ordering system that allows users to choose between boba or pizza",
+        liveLink: "",
+        gitHubLink: "https://github.com/albertzeap/boba-slice",
+        image: furnitureLanding,
+        techStack: [
+            {
+                name: "Java"
+            },
+            {
+                name: "Spring Boot"
+            },
+            {
+                name: "MySQL"
+            },
+            {
+                name: "React"
+            },
+            {
+                name: "JavaScript"
+            },
+            {
+                name: "CSS"
+            },
+            {
+                name: "AWS"
+            },
+        ]
     }
 ]
 
@@ -51,6 +84,7 @@ const otherProjects = [
         subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
         liveLink: "https://timelines-ismael-barajas.vercel.app",
         gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
+        image: githubTimelines,
         techStack: [
             {
                 name: "React"
@@ -81,6 +115,7 @@ const otherProjects = [
         subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
         liveLink: "https://timelines-ismael-barajas.vercel.app",
         gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
+        image: furnitureLanding,
         techStack: [
             {
                 name: "React"
@@ -111,6 +146,38 @@ const otherProjects = [
         subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
         liveLink: "https://timelines-ismael-barajas.vercel.app",
         gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
+        image: furnitureLanding,
+        techStack: [
+            {
+                name: "React"
+            },
+            {
+                name: "Next.js"
+            },
+            {
+                name: "JavaScript"
+            },
+            {
+                name: "HTML"
+            },
+            {
+                name: "CSS"
+            },
+            {
+                name: "Vercel"
+            },
+            {
+                name: "Github API"
+            },
+        ]
+    },
+    {
+        id: "1",
+        title: "GitHub Timelines",
+        subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
+        liveLink: "https://timelines-ismael-barajas.vercel.app",
+        gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
+        image: furnitureLanding,
         techStack: [
             {
                 name: "React"
@@ -188,7 +255,7 @@ export const Projects = () => {
                         {favoriteProjects.map((project) => (
                             <Card key={project.id} className="my-4" style={{width: "65vw"}}>
                                 <Card.Header className="">
-                                    <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
+                                    <Card.Img src={project.image} variant="top" className="py-3"/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
@@ -275,10 +342,10 @@ export const Projects = () => {
 
 
                             {otherProjects.map((project) => (
-                            <Col>
+                            <Col sm={6} md={6} lg={4} xl={4} xxl={4}>
                             <Card key={project.id} className="my-4">
                                 <Card.Header className="">
-                                    <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
+                                    <Card.Img src={project.image} variant="top" className="py-3"/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold py-3 fs-3 text-uppercase">
@@ -314,7 +381,7 @@ export const Projects = () => {
 
                     </Row>
 
-</Card>
+                </Card>
 
 
 

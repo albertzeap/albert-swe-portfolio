@@ -71,6 +71,10 @@ body {
     color: #FF6A5C;
 }
 
+.aboutParagraph{
+    /* font-size: 0.5em; */
+}
+
 .paragraphs{
     text-align: justify;
     hyphens: auto;
