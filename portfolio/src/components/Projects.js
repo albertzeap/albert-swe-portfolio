@@ -143,15 +143,16 @@ export const Projects = () => {
                                     </Container>
                                     <Container className="d-flex justify-content-center ">
                                         {project.liveLink !== "" ? (
-                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
+                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
                                         ):(
                                             <></>
                                         )}
                                         <Link className="projectLink">Read Case Study</Link>
                                     </Container>
                                     <Container className="d-flex justify-content-end align-items-center px-3">
-                                        <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink">
+                                        <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
                                             <AiFillGithub size={"2em"}/>
+                                            <span className="visually-hidden">GitHub Repository</span>
                                         </a>
                                     </Container>
                                 </Card.Body>
@@ -198,15 +199,16 @@ export const Projects = () => {
                                     <Card.Footer>
                                         <Container className="d-flex justify-content-center align-items-end ">
                                             {project.liveLink !== "" ? (
-                                                <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
+                                                <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
                                                 ):(
                                                     <></>
                                                     )}
                                             <Link className="projectLink">Read Case Study</Link>
                                         </Container>
                                         <Container className="d-flex justify-content-center align-items-center px-3 py-3">
-                                            <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink">
+                                            <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
                                                 <AiFillGithub size={"2em"}/>
+                                                <span className="visually-hidden">GitHub Repository</span>
                                             </a>
                                         </Container>
 

@@ -20,7 +20,7 @@ export const Experience = () => {
                 <Row>
                     <Col>
                         <Container className="d-flex flex-column pb-5 w-50">
-                            <Image src="https://cognixia.com/us/wp-content/uploads/2023/04/Cognixia-Logo_Ascendion-Co.png" />
+                            <Image src="https://cognixia.com/us/wp-content/uploads/2023/04/Cognixia-Logo_Ascendion-Co.png" alt="cognixia logo" />
                         </Container>
                     </Col>
                     <Col>
@@ -29,7 +29,7 @@ export const Experience = () => {
                             <p className="py-1 text-muted">January 2023 - Present</p>
                             
                             <ul>
-                                <li className="listItem py-2">Participated in a hyper-intense technical training program that gives top STEM talent from across the U.S. the equivalent of 12-18 months of industry experience.</li>
+                                <li className="listItem py-2">Participated in a hyper-intense technical training program that gives STEM talent from across the U.S. the equivalent of 12-18 months of industry experience.</li>
                                 <li className="listItem py-2">Established decoupled backend service using Java/J2EE, Spring Boot REST APIs, Spring Security, JWT token APIs authentication, password encryption, ORM tools like Hibernate & JPA, and unit tests with Mockito & Junit Test Suite. </li>
                                 <li className="listItem py-2">Developed front end with React.js and Bootstrap to consume Spring Boot REST API service.</li>
                             </ul>

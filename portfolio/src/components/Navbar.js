@@ -19,7 +19,7 @@ export const NavBar = () =>{
                     <AnchorLink href='#home' className="navLink text-uppercase">A.P.</AnchorLink>
                 </Navbar.Brand>
                 <Navbar.Toggle id="offcanvasNavbarToggle" className="navToggle border border-0" aria-controls="offcanvasNavbar-expand-lg"/>
-                <Navbar.Offcanvas id="offcanvasNavbar-expand-lg" aria-labelledby="offcanvasNavbarLabel-expand-lg" placement="end" className="navOffcanvas">
+                <Navbar.Offcanvas id="offcanvasNavbar-expand-lg" placement="end" className="navOffcanvas">
                     <Offcanvas.Header closeButton className="text-color-white">
                         <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg" className="fw-bold text-white">Menu</Offcanvas.Title>
                     </Offcanvas.Header>

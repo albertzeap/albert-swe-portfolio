@@ -40,11 +40,13 @@ export const About = () => {
                                 <Container className="text-center">
                                     <p className="fw-bold">Get to know me more by checking here!</p>
                                     <Container className="d-flex justify-content-center">
-                                        <a href="https://github.com/albertzeap" target="_blank" rel="noreferrer" className="projectLink">
+                                        <a href="https://github.com/albertzeap" target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Profile. Will open new tab">
                                             <BsGithub className="mx-4" size={"2em"}/>
+                                            <span className="visually-hidden">GitHub Profile</span>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/albert-paez-30501a1b5" target="_blank" rel="noreferrer" className="projectLink">
+                                        <a href="https://www.linkedin.com/in/albert-paez-30501a1b5" target="_blank" rel="noreferrer" className="projectLink" title="Visit LinkedIn Profile. Will open new tab">
                                             <BsLinkedin className="mx-4" size={"2em"}/>
+                                            <span className="visually-hidden">LinkedIn Profile</span>
                                         </a>
                                     </Container>
                                 </Container>
