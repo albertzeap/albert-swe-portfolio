@@ -71,6 +71,18 @@ body {
     color: #FF6A5C;
 }
 
+.navButton{
+    background-color: transparent;
+    border: solid 1px #f5f4f4;
+}
+
+.navButton:hover{
+    color: #FF6A5C;
+    border: solid 1px #FF6A5C;
+    background-color: transparent;
+}
+
+
 /* .aboutParagraph{
     font-size: 0.5em;
 } */
@@ -140,7 +152,11 @@ body {
     width: 1px;
     height: 1px;
     white-space: nowrap;
-  }
+}
+
+.custom-offcanvas{
+    width: 50%;
+}
   
 
 

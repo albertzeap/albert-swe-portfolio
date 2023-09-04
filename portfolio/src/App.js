@@ -1,3 +1,6 @@
+
+
+
 import { BrowserRouter} from "react-router-dom";
 import { NavBar } from "./components/Navbar";
 import { Home } from "./components/Home";
@@ -12,16 +15,23 @@ import { Experience } from "./components/Experience";
 
 
 function App() {
+
   return (
     <BrowserRouter>
-      <div className="App">
+     <div className="App">
+
+
 
       <main>
+
+      
+  
 
         <section id="home">
           <NavBar />
           <Home/>
         </section>
+
 
         <section id="about">
           <About/>
@@ -37,6 +47,8 @@ function App() {
           <Projects/>
         </section>
 
+      
+       
       </main>
         <footer id="contact" className="footerSection">
           <Contact/>

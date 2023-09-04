@@ -4,6 +4,8 @@ import Col from 'react-bootstrap/Col';
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
 
 import "../styles/about.css"
+// import Image from "react-bootstrap/esm/Image";
+// import profile from "../assets/profile.jpg"
 
 export const About = () => {
     return(
@@ -13,6 +15,9 @@ export const About = () => {
                 <hr></hr>
               
                        <Container fluid>
+                            {/* <Container className="d-flex justify-content-center pt-4">
+                                <Image  src={profile} rounded/>
+                            </Container> */}
                             <Row className="paragraphs pb-4 mb-5 py-4">
                                 
                                 <Col className="aboutParagraph py-3 gx-5">

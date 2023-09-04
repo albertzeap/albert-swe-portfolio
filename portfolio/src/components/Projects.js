@@ -25,7 +25,7 @@ const favoriteProjects = [
         liveLink: "https://furniture-hub.vercel.app",
         gitHubLink: "https://github.com/albertzeap/furniture-hub-ecommerce",
         image: furnitureLanding,
-        techStack: ["React", "Redux", "JavaScript", "HTML", "CSS", "Bootstrap", "Supabase (Postgres)"]
+        techStack: ["React", "Redux", "JavaScript", "HTML", "CSS", "Bootstrap", "Supabase(Postgres)"]
     },
     {
         id: "2a",
@@ -34,7 +34,7 @@ const favoriteProjects = [
         liveLink: "",
         gitHubLink: "https://github.com/albertzeap/boba-slice",
         image: bobaSlice,
-        techStack: ["Java", "Spring Boot", "MySQL", "React", "JavaScript", "CSS", "AWS"]
+        techStack: ["Java", "Spring-Boot", "MySQL", "React", "JavaScript", "CSS", "AWS"]
     },
     {
         id: "3a",
@@ -55,7 +55,7 @@ const otherProjects = [
         liveLink: "https://timelines-ismael-barajas.vercel.app",
         gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
         image: githubTimelines,
-        techStack: ["React", "Next.js", "JavaScript", "HTML", "CSS", "Vercel", "Github API"]
+        techStack: ["React", "Next.js", "JavaScript", "HTML", "CSS", "Vercel", "Github-API"]
     },
     {
         id: "2b",
@@ -82,7 +82,7 @@ const otherProjects = [
         liveLink: "https://paez-visuals.web.app",
         gitHubLink: "https://github.com/albertzeap/Paez-Visuals",
         image: paezVisuals,
-        techStack: ["React", "JavaScript", "HTML", "CSS", "Netlify", "Bulma.css", "Email.js", "Framer Motion"]
+        techStack: ["React", "JavaScript", "HTML", "CSS", "Netlify", "Bulma.css", "Email.js", "Framer-Motion"]
     },
     {
         id: "5b",
@@ -91,7 +91,7 @@ const otherProjects = [
         liveLink: "https://facebook-clone-5a055.web.app",
         gitHubLink: "https://github.com/albertzeap/Facebook-Clone",
         image: facebook,
-        techStack: ["React", "JavaScript", "HTML", "CSS", "Firebase", "Material-UI", "React Context"]
+        techStack: ["React", "JavaScript", "HTML", "CSS", "Firebase", "Material-UI", "React-Context"]
     },
     {
         id: "6b",
@@ -100,7 +100,7 @@ const otherProjects = [
         liveLink: "",
         gitHubLink: "https://github.com/albertzeap/Furniture-Hub-Backend",
         image: productApi,
-        techStack: ["Java", "MySQL", "Spring Boot"]
+        techStack: ["Java", "MySQL", "Spring-Boot"]
     }
 ]
 
@@ -135,7 +135,8 @@ export const Projects = () => {
                                         <Row>
                                         {project.techStack.map((tech) => (
                                             <Col>
-                                                <Badge className="projectBadge mx-2">{tech}</Badge>
+                                                {console.log(`${project.id}-${tech}`)}
+                                                <Badge key={`${project.id}-${tech}`} className="projectBadge mx-2">{tech}</Badge>
                                             </Col>
                                         ))}
                                     
@@ -170,8 +171,8 @@ export const Projects = () => {
                     <Row>
 
                             {otherProjects.map((project) => (
-                            <Col sm={6} md={6} lg={4} xl={4} xxl={4}>
-                            <Card key={project.id} className="my-4">
+                            <Col key={project.id} sm={6} md={6} lg={4} xl={4} xxl={4}>
+                            <Card className="my-4">
 
                                 <Card.Header className="">
                                     <Card.Img src={project.image} alt="project screenshot" variant="top" className="py-3" height={"250vh"}/>
@@ -189,7 +190,7 @@ export const Projects = () => {
 
                                         {project.techStack.map((tech) => (
                                             <Col xs={6} sm={6} md={4}>
-                                                <Badge className="projectBadge mx-1 my-1" >{tech}</Badge>
+                                                <Badge key={`${project.id}-${tech}`} className="projectBadge mx-1 my-1" >{tech}</Badge>
                                             </Col>
                                         ))}
                                         </Row>

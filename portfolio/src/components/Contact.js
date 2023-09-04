@@ -13,7 +13,7 @@ export const Contact = () => {
                 <Col xs={12} sm={12} md={6}  className="d-flex flex-column align-items-center py-4">
                     
 
-                    <h3 className="fs-4 fw-bold">Here are some of my social accounts.</h3>
+                    <h2 className="fs-4 fw-bold">Here are some of my social accounts.</h2>
                     <p>You can check them out if you want...you should check them out {`:)`}</p>
                     <Container id="socials" className="d-flex justify-content-center">
                     <a id="contactLinkedIn" href="https://www.linkedin.com/in/albert-paez-30501a1b5" target="_blank" rel="noreferrer" className="projectLink" aria-labelledby="contactLinkedIn socials" title="Visit LinkedIn Profile. Will open new tab.">
