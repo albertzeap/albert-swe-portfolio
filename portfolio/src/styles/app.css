@@ -71,9 +71,9 @@ body {
     color: #FF6A5C;
 }
 
-.aboutParagraph{
-    /* font-size: 0.5em; */
-}
+/* .aboutParagraph{
+    font-size: 0.5em;
+} */
 
 .paragraphs{
     text-align: justify;
@@ -97,9 +97,15 @@ body {
     border-right: solid 1px #414141;
 }
 
-.workButtons:hover, .workButtons:active{
-    color:#bd3e33;
+.workButtons{
     background-color: #bd3e33;
+    color: #f7f7f7;
+    border: none;
+}
+
+.workButtons:hover, .workButtons:active{
+    color:#f7f7f7;
+    background-color: #65211b;
 }
 
 .listItem{
@@ -121,6 +127,10 @@ body {
 }
 .projectBadge:hover{
     background-color: #414141;
+}
+
+.footerSection{
+    background-color: #CCDFCB
 }
 
 

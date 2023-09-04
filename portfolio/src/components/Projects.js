@@ -3,204 +3,104 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Badge from 'react-bootstrap/Badge';
-import Carousel from 'react-bootstrap/Carousel';
-import  Image from 'react-bootstrap/Image'
 import {AiFillGithub} from "react-icons/ai"
 import { Link } from "react-router-dom";
 
 import furnitureLanding from "../assets/furnitureLanding.png"
 import githubTimelines from "../assets/githubTimelines.png"
+import bobaSlice from "../assets/bobaSlice.png"
+import contactManager from "../assets/contactManager.png"
+import purrfectMeowdel from "../assets/purrfect.png"
+import paezVisuals from "../assets/paezVisuals.png"
+import studentGradebook from "../assets/studentGradebook.png"
+import facebook from "../assets/facebook.png"
+import productApi from "../assets/productApi.png"
 
 
 const favoriteProjects = [
     {
-        id: "1",
+        id: "1a",
         title: "Furniture Plus",
         subtitle: "A comprehensive e-commerce web application for buying and selling furniture products online.",
         liveLink: "https://furniture-hub.vercel.app",
         gitHubLink: "https://github.com/albertzeap/furniture-hub-ecommerce",
         image: furnitureLanding,
-        techStack: [
-            {
-                name: "React"
-            },
-            {
-                name: "Redux"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "Bootstrap"
-            },
-            {
-                name: "Supabase (Postgres)"
-            },
-        ]
+        techStack: ["React", "Redux", "JavaScript", "HTML", "CSS", "Bootstrap", "Supabase (Postgres)"]
     },
     {
-        id: "2",
+        id: "2a",
         title: "Boba Slice",
         subtitle: "Full stack app for a food ordering system that allows users to choose between boba or pizza",
         liveLink: "",
         gitHubLink: "https://github.com/albertzeap/boba-slice",
-        image: furnitureLanding,
-        techStack: [
-            {
-                name: "Java"
-            },
-            {
-                name: "Spring Boot"
-            },
-            {
-                name: "MySQL"
-            },
-            {
-                name: "React"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "AWS"
-            },
-        ]
+        image: bobaSlice,
+        techStack: ["Java", "Spring Boot", "MySQL", "React", "JavaScript", "CSS", "AWS"]
+    },
+    {
+        id: "3a",
+        title: "Contact Manager",
+        subtitle: "A JavaFX application for managing contacts",
+        liveLink: "",
+        gitHubLink: "https://github.com/albertzeap/boba-slice",
+        image: contactManager,
+        techStack: ["Java", "JavaFX", "MySQL", "JDBC"]
     }
 ]
 
 const otherProjects = [
     {
-        id: "1",
+        id: "1b",
         title: "GitHub Timelines",
         subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
         liveLink: "https://timelines-ismael-barajas.vercel.app",
         gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
         image: githubTimelines,
-        techStack: [
-            {
-                name: "React"
-            },
-            {
-                name: "Next.js"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "Vercel"
-            },
-            {
-                name: "Github API"
-            },
-        ]
+        techStack: ["React", "Next.js", "JavaScript", "HTML", "CSS", "Vercel", "Github API"]
     },
     {
-        id: "1",
-        title: "GitHub Timelines",
-        subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
-        liveLink: "https://timelines-ismael-barajas.vercel.app",
-        gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
-        image: furnitureLanding,
-        techStack: [
-            {
-                name: "React"
-            },
-            {
-                name: "Next.js"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "Vercel"
-            },
-            {
-                name: "Github API"
-            },
-        ]
+        id: "2b",
+        title: "Purrfect Meowdel",
+        subtitle: "A web application for creating blogs based off a client's Facebook cat page.",
+        liveLink: "https://www.purrfectmeowdel.com",
+        gitHubLink: "https://github.com/albertzeap/purrfect-meowdel",
+        image: purrfectMeowdel,
+        techStack: ["React", "JavaScript", "Bootstrap", "HTML", "CSS", "Vercel", "Sanity.io"]
     },
     {
-        id: "1",
-        title: "GitHub Timelines",
-        subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
-        liveLink: "https://timelines-ismael-barajas.vercel.app",
-        gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
-        image: furnitureLanding,
-        techStack: [
-            {
-                name: "React"
-            },
-            {
-                name: "Next.js"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "Vercel"
-            },
-            {
-                name: "Github API"
-            },
-        ]
+        id: "3b",
+        title: "Student Gradebook",
+        subtitle: "Java console application that allows teacher's to keep track of classes and grades.",
+        liveLink: "",
+        gitHubLink: "https://github.com/albertzeap/JUMPlus/tree/master/Project3",
+        image: studentGradebook,
+        techStack: ["Java", "JDBC", "MySQL"]
     },
     {
-        id: "1",
-        title: "GitHub Timelines",
-        subtitle: "Web application that allows employers to view a timeline view of a user's repository history.",
-        liveLink: "https://timelines-ismael-barajas.vercel.app",
-        gitHubLink: "https://github.com/Ismael-Barajas/Timelines",
-        image: furnitureLanding,
-        techStack: [
-            {
-                name: "React"
-            },
-            {
-                name: "Next.js"
-            },
-            {
-                name: "JavaScript"
-            },
-            {
-                name: "HTML"
-            },
-            {
-                name: "CSS"
-            },
-            {
-                name: "Vercel"
-            },
-            {
-                name: "Github API"
-            },
-        ]
+        id: "4b",
+        title: "Paez Visuals",
+        subtitle: "Web application that serves as my videographer portfolio site.",
+        liveLink: "https://paez-visuals.web.app",
+        gitHubLink: "https://github.com/albertzeap/Paez-Visuals",
+        image: paezVisuals,
+        techStack: ["React", "JavaScript", "HTML", "CSS", "Netlify", "Bulma.css", "Email.js", "Framer Motion"]
+    },
+    {
+        id: "5b",
+        title: "Facebook Clone",
+        subtitle: "Web application that mimics social media site, Facebook.",
+        liveLink: "https://facebook-clone-5a055.web.app",
+        gitHubLink: "https://github.com/albertzeap/Facebook-Clone",
+        image: facebook,
+        techStack: ["React", "JavaScript", "HTML", "CSS", "Firebase", "Material-UI", "React Context"]
+    },
+    {
+        id: "6b",
+        title: "Product REST API",
+        subtitle: "A backend service that handles the ordering of products.",
+        liveLink: "",
+        gitHubLink: "https://github.com/albertzeap/Furniture-Hub-Backend",
+        image: productApi,
+        techStack: ["Java", "MySQL", "Spring Boot"]
     }
 ]
 
@@ -219,43 +119,10 @@ export const Projects = () => {
                 <Row>
                     <Col className="d-flex flex-column align-items-center">
 
-                        {/* <Card className="my-4" style={{width: "65vw"}}>
-                            <Card.Header className="">
-                                <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
-                            </Card.Header>
-                            <Card.Body className="text-center">
-                                <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
-                                    Furniture Plus
-                                </Card.Title>
-                                <Card.Subtitle className="pb-2">
-                                    <p> A comprehensive e-commerce web application for buying and selling furniture products online. </p>
-                                </Card.Subtitle>
-                                <Container className="d-flex justify-content-center pb-5">
-                                    <Badge className="projectBadge mx-2">React</Badge>
-                                    <Badge className="projectBadge mx-2">Redux</Badge>
-                                    <Badge className="projectBadge mx-2">JavaScript</Badge>
-                                    <Badge className="projectBadge mx-2">HTML</Badge>
-                                    <Badge className="projectBadge mx-2">CSS</Badge>
-                                    <Badge className="projectBadge mx-2">Bootstrap</Badge>
-                                    <Badge className="projectBadge mx-2">Supabase (Postgres)</Badge>
-
-                                </Container>
-                                <Container className="d-flex justify-content-center ">
-                                    <a href="https://furniture-hub.vercel.app" target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
-                                    <Link className="projectLink">Read Case Study</Link>
-                                </Container>
-                                <Container className="d-flex justify-content-end align-items-center px-3">
-                                    <a href="https://github.com/albertzeap/furniture-hub-ecommerce" target="_blank" rel="noreferrer" className="projectLink">
-                                        <AiFillGithub size={"2em"}/>
-                                    </a>
-                                </Container>
-                            </Card.Body>
-                        </Card> */}
-
                         {favoriteProjects.map((project) => (
                             <Card key={project.id} className="my-4" style={{width: "65vw"}}>
                                 <Card.Header className="">
-                                    <Card.Img src={project.image} variant="top" className="py-3"/>
+                                    <Card.Img src={project.image} alt="project screenshot" variant="top" className="py-3"/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
@@ -268,14 +135,18 @@ export const Projects = () => {
                                         <Row>
                                         {project.techStack.map((tech) => (
                                             <Col>
-                                            <Badge className="projectBadge mx-2">{tech.name}</Badge>
+                                                <Badge className="projectBadge mx-2">{tech}</Badge>
                                             </Col>
                                         ))}
                                     
                                         </Row>
                                     </Container>
                                     <Container className="d-flex justify-content-center ">
-                                        <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
+                                        {project.liveLink !== "" ? (
+                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
+                                        ):(
+                                            <></>
+                                        )}
                                         <Link className="projectLink">Read Case Study</Link>
                                     </Container>
                                     <Container className="d-flex justify-content-end align-items-center px-3">
@@ -296,84 +167,51 @@ export const Projects = () => {
                 <Card className="py-3 px-4">
 
                     <Row>
-                            {/* <Col>
-                                <Card className="my-4">
-                                    <Card.Header className="">
-                                        <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
-                                    </Card.Header>
-                                    <Card.Body className="text-center">
-                                        <Card.Title className="fw-bold py-3 fs-3 text-uppercase">
-                                            Furniture Plus
-                                        </Card.Title>
-                                        <p>A comprehensive e-commerce web application for buying and selling furniture products online.. </p>
-                                    </Card.Body>
-                                </Card>
-
-                            </Col>
-                            <Col>
-                                <Card className="my-4">
-                                    <Card.Header className="">
-                                        <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
-                                    </Card.Header>
-                                    <Card.Body className="text-center">
-                                        <Card.Title className="fw-bold py-3 fs-3 text-uppercase">
-                                            Furniture Plus
-                                        </Card.Title>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                    </Card.Body>
-                                </Card>
-
-                            </Col>
-                            <Col>
-                                <Card className="my-4">
-                                    <Card.Header className="">
-                                        <Card.Img src={furnitureLanding} variant="top" className="py-3"/>
-                                    </Card.Header>
-                                    <Card.Body className="text-center">
-                                        <Card.Title className="fw-bold py-3 fs-3 text-uppercase">
-                                            Furniture Plus
-                                        </Card.Title>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                                    </Card.Body>
-                                </Card>
-
-                            </Col> */}
-
-
 
                             {otherProjects.map((project) => (
                             <Col sm={6} md={6} lg={4} xl={4} xxl={4}>
                             <Card key={project.id} className="my-4">
+
                                 <Card.Header className="">
-                                    <Card.Img src={project.image} variant="top" className="py-3"/>
+                                    <Card.Img src={project.image} alt="project screenshot" variant="top" className="py-3" height={"250vh"}/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
+                               
                                     <Card.Title className="fw-bold py-3 fs-3 text-uppercase">
                                         {project.title}
                                     </Card.Title>
                                     <Card.Subtitle className="pb-2">
                                         <p>{project.subtitle}</p>
                                     </Card.Subtitle>
-                                    <Container className="d-flex justify-content-center pb-5">
+                                    <Container className="d-flex justify-content-center align-items-center pb-5" style={{height: "25vh"}}>
                                         <Row>
 
                                         {project.techStack.map((tech) => (
-                                            <Col>
-                                                <Badge className="projectBadge mx-2">{tech.name}</Badge>
+                                            <Col xs={6} sm={6} md={4}>
+                                                <Badge className="projectBadge mx-1 my-1" >{tech}</Badge>
                                             </Col>
                                         ))}
                                         </Row>
                                     
                                     </Container>
-                                    <Container className="d-flex justify-content-center ">
-                                        <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
-                                        <Link className="projectLink">Read Case Study</Link>
-                                    </Container>
-                                    <Container className="d-flex justify-content-end align-items-center px-3">
-                                        <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink">
-                                            <AiFillGithub size={"2em"}/>
-                                        </a>
-                                    </Container>
+
+                                    <Card.Footer>
+                                        <Container className="d-flex justify-content-center align-items-end ">
+                                            {project.liveLink !== "" ? (
+                                                <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3">View Live</a>
+                                                ):(
+                                                    <></>
+                                                    )}
+                                            <Link className="projectLink">Read Case Study</Link>
+                                        </Container>
+                                        <Container className="d-flex justify-content-center align-items-center px-3 py-3">
+                                            <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink">
+                                                <AiFillGithub size={"2em"}/>
+                                            </a>
+                                        </Container>
+
+                                    </Card.Footer>
+                                  
                                 </Card.Body>
                             </Card>
                             </Col>
@@ -383,32 +221,6 @@ export const Projects = () => {
 
                 </Card>
 
-
-
-
-{/* <Row>
-
-                        <Col xs={8}>
-                        <Container className="d-flex justify-content-center align-content-center">
-                            <Image src={profile} className="w-50"/>
-                        </Container>
-                        </Col>
-                        <Col>
-                        <Container>
-                            <h1>Furniture Hub</h1>
-                            <p className="py-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            <p className="py-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                            1500s, when an unknown printer took a galley of type and scrambled it to
-                            make a type specimen book. It has survived not only five centuries, but
-                            also the leap into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the release of Letraset
-                            sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        </Container>
-                        </Col>
-                
-                </Row> */}
             </Container>
 
         </Container>

@@ -13,7 +13,8 @@ export const Home = () => {
                 <Container className="text-center w-50 py-3">
                     <p className="text-center py-2" style={{color: "#CCDFCB" }}> I am a software engineer/full stack developer that loves to build anything.</p>
                 </Container>
-                <Container className="py-3">
+                
+                <Container className="d-flex flex-column justify-content-end h-50 w-25">
                     <AnchorLink className="navLink text-white" href="#about">
                         <p style={{color: "#CCDFCB" }}>Read More</p>
                         <BsChevronDoubleDown size={"2em"}/>
