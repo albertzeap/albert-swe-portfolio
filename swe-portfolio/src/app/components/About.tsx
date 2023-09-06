@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import {motion} from "framer-motion";
 
 
 // import "../styles/about.css"
@@ -16,8 +17,14 @@ export const About = () => {
           
                 <h2 className="sectionHeader1 text-center fw-bold text-uppercase fs-1 pt-3 pb-5">So who am i?</h2>
                 <hr></hr>
-              
-                       <Container fluid>
+
+                    <motion.div
+                        initial={{opacity: 0, y: -75}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{delay:0.25, duration: 0.5}}
+                    >
+
+                        <Container fluid>
                             {/* <Container className="d-flex justify-content-center pt-4">
                                 <Image  src={profile} rounded/>
                             </Container> */}
@@ -62,9 +69,10 @@ export const About = () => {
 
 
                        </Container>
+                    </motion.div>
                      
                    
-                {/* </Container> */}
+              
        
         </Container>
     )
