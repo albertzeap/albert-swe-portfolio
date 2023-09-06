@@ -3,7 +3,8 @@
 import Container from "react-bootstrap/Container";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { BsChevronDoubleDown } from 'react-icons/bs';
-import "../styles/home.css"
+
+// import "../styles/home.css"
 // import { motion, useInView, useAnimation } from "framer-motion";
 
 export const Home = () => {

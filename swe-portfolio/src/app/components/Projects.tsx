@@ -4,17 +4,17 @@ import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Badge from 'react-bootstrap/Badge';
 import {AiFillGithub} from "react-icons/ai"
-import { Link } from "react-router-dom";
+import  Link  from "next/link";
 
-import furnitureLanding from "../assets/furnitureLanding.png"
-import githubTimelines from "../assets/githubTimelines.png"
-import bobaSlice from "../assets/bobaSlice.png"
-import contactManager from "../assets/contactManager.png"
-import purrfectMeowdel from "../assets/purrfect.png"
-import paezVisuals from "../assets/paezVisuals.png"
-import studentGradebook from "../assets/studentGradebook.png"
-import facebook from "../assets/facebook.png"
-import productApi from "../assets/productApi.png"
+import furnitureLanding from "../../../public/furnitureLanding.png"
+import githubTimelines from "../../../public/githubTimelines.png"
+import bobaSlice from "../../../public/bobaSlice.png"
+import contactManager from "../../../public/contactManager.png"
+import purrfectMeowdel from "../../../public/purrfect.png"
+import paezVisuals from "../../../public/paezVisuals.png"
+import studentGradebook from "../../../public/studentGradebook.png"
+import facebook from "../../../public/facebook.png"
+import productApi from "../../../public/productApi.png"
 
 
 const favoriteProjects = [
@@ -108,13 +108,13 @@ export const Projects = () => {
     return(
         <Container className="py-5">
             <Container className="py-5">
-                <h1 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5">What have i built?</h1>
+                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5">What have i built?</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
                 
 
-                <h1 className="fw-bold pb-5 text-center">Here are some of my favorite projects.</h1>
+                <h2 className="fw-bold pb-5 text-center">Here are some of my favorite projects.</h2>
                 
                 <Row>
                     <Col className="d-flex flex-column align-items-center">
@@ -122,7 +122,7 @@ export const Projects = () => {
                         {favoriteProjects.map((project) => (
                             <Card key={project.id} className="my-4" style={{width: "65vw"}}>
                                 <Card.Header className="">
-                                    <Card.Img src={project.image} alt="project screenshot" variant="top" className="py-3"/>
+                                    <Card.Img src={project.image.src} alt="project screenshot" variant="top" className="py-3"/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
                                     <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
@@ -134,9 +134,8 @@ export const Projects = () => {
                                     <Container className="d-flex justify-content-center pb-5">
                                         <Row>
                                         {project.techStack.map((tech) => (
-                                            <Col>
-                                                {console.log(`${project.id}-${tech}`)}
-                                                <Badge key={`${project.id}-${tech}`} className="projectBadge mx-2">{tech}</Badge>
+                                            <Col key={`${project.id}-${tech}`}>
+                                                <Badge className="projectBadge mx-2">{tech}</Badge>
                                             </Col>
                                         ))}
                                     
@@ -148,9 +147,9 @@ export const Projects = () => {
                                         ):(
                                             <></>
                                         )}
-                                        <Link className="projectLink">Read Case Study</Link>
+                                        <Link href="/construction"className="projectLink">Read Case Study</Link>
                                     </Container>
-                                    <Container className="d-flex justify-content-end align-items-center px-3">
+                                    <Container className="d-flex justify-content-center align-items-center px-3 py-3">
                                         <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
                                             <AiFillGithub size={"2em"}/>
                                             <span className="visually-hidden">GitHub Repository</span>
@@ -164,7 +163,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
 
-                <h1 className="fw-bold py-5">Now here are some other fun projects.</h1>
+                <h2 className="fw-bold py-5">Now here are some other fun projects.</h2>
 
                 <Card className="py-3 px-4">
 
@@ -175,7 +174,7 @@ export const Projects = () => {
                             <Card className="my-4">
 
                                 <Card.Header className="">
-                                    <Card.Img src={project.image} alt="project screenshot" variant="top" className="py-3" height={"250vh"}/>
+                                    <Card.Img src={project.image.src} alt="project screenshot" variant="top" className="py-3" height={"250vh"}/>
                                 </Card.Header>
                                 <Card.Body className="text-center">
                                
@@ -189,8 +188,8 @@ export const Projects = () => {
                                         <Row>
 
                                         {project.techStack.map((tech) => (
-                                            <Col xs={6} sm={6} md={4}>
-                                                <Badge key={`${project.id}-${tech}`} className="projectBadge mx-1 my-1" >{tech}</Badge>
+                                            <Col key={`${project.id}-${tech}`} xs={6} sm={6} md={4}>
+                                                <Badge className="projectBadge mx-1 my-1" >{tech}</Badge>
                                             </Col>
                                         ))}
                                         </Row>
@@ -204,7 +203,7 @@ export const Projects = () => {
                                                 ):(
                                                     <></>
                                                     )}
-                                            <Link className="projectLink">Read Case Study</Link>
+                                            <Link href="/construction" className="projectLink">Read Case Study</Link>
                                         </Container>
                                         <Container className="d-flex justify-content-center align-items-center px-3 py-3">
                                             <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
