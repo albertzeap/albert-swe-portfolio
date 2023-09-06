@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card"
 import Badge from 'react-bootstrap/Badge';
 import {AiFillGithub} from "react-icons/ai"
 import  Link  from "next/link";
+import {motion} from "framer-motion"
 
 import furnitureLanding from "../../../public/furnitureLanding.png"
 import githubTimelines from "../../../public/githubTimelines.png"
@@ -108,62 +109,68 @@ export const Projects = () => {
     return(
         <Container className="py-5">
             <Container className="py-5">
-                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5">What have i built?</h2>
+                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5 fs-1">What have i built?</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
                 
 
-                <h2 className="fw-bold pb-5 text-center">Here are some of my favorite projects.</h2>
+                <h2 className="fw-bold pb-5 text-center fs-1">Here are some of my favorite projects.</h2>
                 
                 <Row>
                     <Col className="d-flex flex-column align-items-center">
 
                         {favoriteProjects.map((project) => (
-                            <Card key={project.id} className="my-4" style={{width: "65vw"}}>
-                                <Card.Header className="">
-                                    <Card.Img src={project.image.src} alt="project screenshot" variant="top" className="py-3"/>
-                                </Card.Header>
-                                <Card.Body className="text-center">
-                                    <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
-                                        {project.title}
-                                    </Card.Title>
-                                    <Card.Subtitle className="pb-2">
-                                        <p>{project.subtitle}</p>
-                                    </Card.Subtitle>
-                                    <Container className="d-flex justify-content-center pb-5">
-                                        <Row>
-                                        {project.techStack.map((tech) => (
-                                            <Col key={`${project.id}-${tech}`}>
-                                                <Badge className="projectBadge mx-2">{tech}</Badge>
-                                            </Col>
-                                        ))}
-                                    
-                                        </Row>
-                                    </Container>
-                                    <Container className="d-flex justify-content-center ">
-                                        {project.liveLink !== "" ? (
-                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
-                                        ):(
-                                            <></>
-                                        )}
-                                        <Link href="/construction"className="projectLink">Read Case Study</Link>
-                                    </Container>
-                                    <Container className="d-flex justify-content-center align-items-center px-3 py-3">
-                                        <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
-                                            <AiFillGithub size={"2em"}/>
-                                            <span className="visually-hidden">GitHub Repository</span>
-                                        </a>
-                                    </Container>
-                                </Card.Body>
-                            </Card>
+                            <motion.div key={project.id}
+                                initial={{opacity: 0}}
+                                whileInView={{opacity: 1 }}
+                                transition={{delay:0.25, duration: 0.5}}
+                            >
+                                <Card className="my-4" style={{width: "65vw"}}>
+                                    <Card.Header className="">
+                                        <Card.Img src={project.image.src} alt="project screenshot" variant="top" className="py-3"/>
+                                    </Card.Header>
+                                    <Card.Body className="text-center">
+                                        <Card.Title className="fw-bold py-3 fs-1 text-uppercase">
+                                            {project.title}
+                                        </Card.Title>
+                                        <Card.Subtitle className="pb-2">
+                                            <p>{project.subtitle}</p>
+                                        </Card.Subtitle>
+                                        <Container className="d-flex justify-content-center pb-5">
+                                            <Row>
+                                            {project.techStack.map((tech) => (
+                                                <Col key={`${project.id}-${tech}`}>
+                                                    <Badge className="projectBadge mx-2">{tech}</Badge>
+                                                </Col>
+                                            ))}
+                                        
+                                            </Row>
+                                        </Container>
+                                        <Container className="d-flex justify-content-center ">
+                                            {project.liveLink !== "" ? (
+                                                <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
+                                            ):(
+                                                <></>
+                                            )}
+                                            <Link href="/construction"className="projectLink">Read Case Study</Link>
+                                        </Container>
+                                        <Container className="d-flex justify-content-center align-items-center px-3 py-3">
+                                            <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
+                                                <AiFillGithub size={"2em"}/>
+                                                <span className="visually-hidden">GitHub Repository</span>
+                                            </a>
+                                        </Container>
+                                    </Card.Body>
+                                </Card>
+                            </motion.div>
                         ))}
 
                         
                     </Col>
                 </Row>
 
-                <h2 className="fw-bold py-5">Now here are some other fun projects.</h2>
+                <h2 className="fw-bold py-5 fs-1">Now here are some other fun projects.</h2>
 
                 <Card className="py-3 px-4">
 
