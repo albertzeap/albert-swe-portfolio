@@ -10,7 +10,7 @@ export const Experience = () => {
         <Container className="py-5 w-75">
             
             <Container>
-                <h1 className="sectionHeader2 text-center text-uppercase fw-bold pt-3 pb-5">Where have i worked?</h1>
+                <h2 className="sectionHeader2 text-center text-uppercase fw-bold pt-3 pb-5">Where have i worked?</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
@@ -25,7 +25,7 @@ export const Experience = () => {
                     </Col>
                     <Col>
                         <Container>
-                            <h1 className="fs-4 fw-bold py-1">Full Stack Java Developer @ Cognixia</h1>
+                            <h3 className="fs-4 fw-bold py-1">Full Stack Java Developer @ Cognixia</h3>
                             <p className="py-1 text-muted">January 2023 - Present</p>
                             
                             <ul>

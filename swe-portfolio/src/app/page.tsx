@@ -6,6 +6,7 @@ import { Experience } from './components/Experience'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import styles from './styles/page.module.css'
 
@@ -16,13 +17,16 @@ export default function App() {
      
       <section id="home">
           <NavBar />
+          
           <Home/>
+          
         </section>
 
-
+       
         <section id="about">
           <About/>
         </section>
+       
 
 
         <section id="experience">

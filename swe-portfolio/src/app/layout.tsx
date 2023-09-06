@@ -6,8 +6,16 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Albert Paez',
+  title: {
+    default: 'Albert Paez | Portfolio',
+    template: '%s | Albert Paez',
+  },
   description: 'Hello, my name is Albert Paez and this is my software engineer portfolio!',
+  keywords: ['My Portfolio', 'Next.js', 'Albert Paez', 'Portfolio'],
+  metadataBase: new URL('https://albertpaez.com'),
+  alternates: {
+    canonical: '/'
+  }
 }
 
 export default function RootLayout({

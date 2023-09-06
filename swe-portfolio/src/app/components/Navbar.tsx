@@ -28,11 +28,6 @@ export const NavBar = () =>{
                     </Offcanvas.Header>
                     <Offcanvas.Body className="justify-content-end flex-grow-1 align-items-center">
                         <Nav>
-                            {/* <Nav.Item className="px-2 py-2">
-                                <AnchorLink href="#home" className="navLink fw-bold">
-                                    {'//'} home
-                                </AnchorLink>
-                            </Nav.Item> */}
                             <Nav.Item className="px-1 py-2">
                                 <AnchorLink href="#about" className="navLink fw-bold">
                                 {'//'} about
@@ -54,9 +49,9 @@ export const NavBar = () =>{
                                 </AnchorLink>
                             </Nav.Item>
                             <Nav.Item className="px-1">
-                                {/* <Button href={resume} className="navButton fw-bold" target="_blank" title="View Resume. Will open file in new tab.">
+                                <Button href="https://drive.google.com/file/d/1-mVEsXAZC4qGB1KtBG9MPxL1lpRDygfA/view?usp=drive_link" className="navButton fw-bold" target="_blank" title="View Resume. Will open file in new tab.">
                                 {'//'} resume
-                                </Button> */}
+                                </Button>
                             </Nav.Item>
                         </Nav>
                     </Offcanvas.Body>

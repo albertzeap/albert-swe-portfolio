@@ -108,13 +108,13 @@ export const Projects = () => {
     return(
         <Container className="py-5">
             <Container className="py-5">
-                <h1 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5">What have i built?</h1>
+                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5">What have i built?</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
                 
 
-                <h1 className="fw-bold pb-5 text-center">Here are some of my favorite projects.</h1>
+                <h2 className="fw-bold pb-5 text-center">Here are some of my favorite projects.</h2>
                 
                 <Row>
                     <Col className="d-flex flex-column align-items-center">
@@ -135,7 +135,6 @@ export const Projects = () => {
                                         <Row>
                                         {project.techStack.map((tech) => (
                                             <Col key={`${project.id}-${tech}`}>
-                                                {/* {console.log(`${project.id}-${tech}`)} */}
                                                 <Badge className="projectBadge mx-2">{tech}</Badge>
                                             </Col>
                                         ))}
@@ -164,7 +163,7 @@ export const Projects = () => {
                     </Col>
                 </Row>
 
-                <h1 className="fw-bold py-5">Now here are some other fun projects.</h1>
+                <h2 className="fw-bold py-5">Now here are some other fun projects.</h2>
 
                 <Card className="py-3 px-4">
 

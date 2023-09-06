@@ -8,12 +8,12 @@ export const Contact = () => {
     return(
 
         <Container className="py-5">
-            <h1 className="text-center py-4 text-uppercase fw-bold fs-3">Thanks for visiting my page!</h1>
+            <h2 className="text-center py-4 text-uppercase fw-bold fs-3">Thanks for visiting my page!</h2>
             <Row className="">
                 <Col xs={12} sm={12} md={6}  className="d-flex flex-column align-items-center py-4">
                     
 
-                    <h2 className="fs-4 fw-bold">Here are some of my social accounts.</h2>
+                    <h3 className="fs-4 fw-bold">Here are some of my social accounts.</h3>
                     <p>You can check them out if you want...you should check them out {`:)`}</p>
                     <Container id="socials" className="d-flex justify-content-center">
                     <a id="contactLinkedIn" href="https://www.linkedin.com/in/albert-paez-30501a1b5" target="_blank" rel="noreferrer" className="projectLink" aria-labelledby="contactLinkedIn socials" title="Visit LinkedIn Profile. Will open new tab.">
@@ -29,7 +29,7 @@ export const Contact = () => {
                 </Col>
                 <Col xs={12} sm={12} md={6} className="d-flex flex-column align-items-center py-4">
                 
-                    <h2 className="fs-4 fw-bold">Have questions? Want to talk?</h2>
+                    <h3 className="fs-4 fw-bold">Have questions? Want to talk?</h3>
                     <p>I sort of check my emails a lot so feel free to send a message my way!</p>
                     <Button className="workButtons" href="mailto:albertzeap@gmail.com">Launch a polite email attack</Button>
                     
