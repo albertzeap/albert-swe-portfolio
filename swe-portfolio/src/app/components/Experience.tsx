@@ -3,15 +3,16 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import  Image from 'react-bootstrap/Image'
 import {motion} from 'framer-motion'
+import { HomeProps } from "../page";
 
 
 
-export const Experience = () => {
+export const Experience: React.FC<HomeProps> = () => {
     return(
         <Container className="py-5 w-75">
             
             <Container>
-                <h2 className="sectionHeader2 text-center text-uppercase fw-bold pt-3 pb-5 fs-1">Where have i worked?</h2>
+                <h2 className="sectionHeader2 text-center text-uppercase fw-bold pt-3 pb-5 fs-1">Where have i worked?👨‍💻</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
@@ -23,11 +24,11 @@ export const Experience = () => {
                     <Container>
 
                     <Row>
-                        <Col>
+                        {/* <Col>
                             <Container className="d-flex flex-column pb-5 w-50">
-                                <Image src="https://cognixia.com/us/wp-content/uploads/2023/04/Cognixia-Logo_Ascendion-Co.png" alt="cognixia logo" />
+                                <Image src="https://cognixia.com/us/wp-content/uploads/2023/04/Cognixia-Logo_Ascendion-Co.png" alt="cognixia logo" width={"100vw"} height={"50vh"} />
                             </Container>
-                        </Col>
+                        </Col> */}
                         <Col>
                             <Container>
                                 <h3 className="fs-4 fw-bold py-1">Full Stack Java Developer @ Cognixia</h3>
