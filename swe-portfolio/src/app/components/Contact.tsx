@@ -3,12 +3,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from 'react-bootstrap/Button'
 import {BsLinkedin, BsGithub} from 'react-icons/bs'
+import { PiElevatorFill } from 'react-icons/pi'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Contact = () => {
     return(
 
         <Container className="py-5">
             <h2 className="text-center py-4 text-uppercase fw-bold fs-3">Thanks for visiting my page!</h2>
+            <hr></hr>
             <Row className="">
                 <Col xs={12} sm={12} md={6}  className="d-flex flex-column align-items-center py-4">
                     
@@ -36,7 +39,15 @@ export const Contact = () => {
                 </Col>
 
             </Row>
-            
+            <hr></hr>
+            <Container className="d-flex flex-column align-items-center">
+                <p className="fw-bold">Need a lift back to the top? No worries I got you covered.</p>
+                <p>(Click the elevator icon)</p>
+                <AnchorLink href="#home">
+                    <PiElevatorFill size={"2em"}/>
+                    <span className="visually-hidden">Scroll to top</span>
+                </AnchorLink>
+            </Container>
         </Container>
     );
 }

@@ -14,8 +14,11 @@ export const metadata: Metadata = {
   keywords: ['My Portfolio', 'Next.js', 'Albert Paez', 'Portfolio'],
   metadataBase: new URL('https://albertpaez.com'),
   alternates: {
-    canonical: '/'
-  }
+    canonical: 'https://albertpaez.com'
+  },
+  // <meta name="google-site-verification" content="S_Z2QerK8OFX3w2oeL5oEgr7iHKNgP-UmsZyCyll_dQ" />
+  // googleSiteVerification: "S_Z2QerK8OFX3w2oeL5oEgr7iHKNgP-UmsZyCyll_dQ"
+
 }
 
 export default function RootLayout({
@@ -25,6 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+       <meta name="google-site-verification" content="S_Z2QerK8OFX3w2oeL5oEgr7iHKNgP-UmsZyCyll_dQ" />
+      </head>
+      
       <body className={inter.className}>
         {children}
       </body>

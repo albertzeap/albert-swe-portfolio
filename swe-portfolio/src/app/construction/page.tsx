@@ -1,25 +1,24 @@
 "use client"
 
 import { Container } from "react-bootstrap";
+import { Cursor } from "../components/Cursor";
+import { motion } from "framer-motion";
 
 
 
 export default function Construction (){
 
     return(
-        <Container className="home-bg-wrapper d-flex flex-column justify-content-center">
+        <>
+        <Cursor/>
+        
 
-            <Container className="text-center pb-5" style={{marginBottom: "10rem"}}>
-                <p className="fw-bold">Hey, looks like this page is</p>
-                <h1 className="fw-bold">UNDER CONSTRUCTION</h1>
-                <Container className="text-center w-50 py-3">
-                    <p className="text-center py-2">Come back soon and maybe I'll be done by then :)</p>
-                </Container>
-          
-                <Container className="d-flex flex-column justify-content-end h-50 w-25">
-
-                </Container>
-            </Container>
+        <Container className="d-flex flex-column justify-content-center text-center" style={{height: "80vh"}}>
+            <motion.p drag dragElastic={0.8} dragConstraints={{left: -100, top:-100, right:100, bottom: 100}} style={{cursor: "grab"}} className="fw-bold">Hey, looks like this page is</motion.p>
+            <motion.h1 drag dragElastic={0.8} dragConstraints={{left: -100, top:-100, right:100, bottom: 100}} style={{cursor: "grab"}} className="fw-bold">UNDER CONSTRUCTION</motion.h1>
+            <motion.p drag dragElastic={0.8} dragConstraints={{left: -100, top:-100, right:100, bottom: 100}} style={{cursor: "grab"}}  className="text-center py-2">Come back soon and maybe I'll be done by then :)</motion.p>
         </Container>
+        
+        </>
     );
 }

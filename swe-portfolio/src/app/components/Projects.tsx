@@ -6,6 +6,7 @@ import Badge from 'react-bootstrap/Badge';
 import {AiFillGithub} from "react-icons/ai"
 import  Link  from "next/link";
 import {motion} from "framer-motion"
+import { HomeProps } from "../page";
 
 import furnitureLanding from "../../../public/furnitureLanding.png"
 import githubTimelines from "../../../public/githubTimelines.png"
@@ -105,11 +106,11 @@ const otherProjects = [
     }
 ]
 
-export const Projects = () => {
+export const Projects: React.FC<HomeProps> = () => {
     return(
         <Container className="py-5">
             <Container className="py-5">
-                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5 fs-1">What have i built?</h2>
+                <h2 className="sectionHeader1 text-center text-uppercase fw-bold pt-3 pb-5 fs-1">What have i built?⚒️</h2>
                 <hr></hr>
             </Container>
             <Container className="py-5">
@@ -137,10 +138,10 @@ export const Projects = () => {
                                         <Card.Subtitle className="pb-2">
                                             <p>{project.subtitle}</p>
                                         </Card.Subtitle>
-                                        <Container className="d-flex justify-content-center pb-5">
+                                        <Container className="d-flex justify-content-center align-content-center pb-5">
                                             <Row>
                                             {project.techStack.map((tech) => (
-                                                <Col key={`${project.id}-${tech}`}>
+                                                <Col key={`${project.id}-${tech}`} xs={4} sm={4} md={3}>
                                                     <Badge className="projectBadge mx-2">{tech}</Badge>
                                                 </Col>
                                             ))}
@@ -153,8 +154,9 @@ export const Projects = () => {
                                             ):(
                                                 <></>
                                             )}
-                                            <Link href="/construction"className="projectLink">Read Case Study</Link>
+                                            <Link href="/construction"className="projectLink">Case Study</Link>
                                         </Container>
+
                                         <Container className="d-flex justify-content-center align-items-center px-3 py-3">
                                             <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
                                                 <AiFillGithub size={"2em"}/>
@@ -169,16 +171,23 @@ export const Projects = () => {
                         
                     </Col>
                 </Row>
+                
 
                 <h2 className="fw-bold py-5 fs-1">Now here are some other fun projects.</h2>
 
-                <Card className="py-3 px-4">
+                <Card className="py-5 px-4 h-100">
 
                     <Row>
 
                             {otherProjects.map((project) => (
-                            <Col key={project.id} sm={6} md={6} lg={4} xl={4} xxl={4}>
-                            <Card className="my-4">
+                            <Col key={project.id} sm={6} md={6} lg={4} xl={4} xxl={4} className="my-3">
+                            <motion.div className="h-100"
+                                initial={{opacity: 0}}
+                                whileInView={{opacity: 1 }}
+                                transition={{delay:0.25, duration: 0.5}}
+                            >
+
+                            <Card className="h-100">
 
                                 <Card.Header className="">
                                     <Card.Img src={project.image.src} alt="project screenshot" variant="top" className="py-3" height={"250vh"}/>
@@ -191,7 +200,7 @@ export const Projects = () => {
                                     <Card.Subtitle className="pb-2">
                                         <p>{project.subtitle}</p>
                                     </Card.Subtitle>
-                                    <Container className="d-flex justify-content-center align-items-center pb-5" style={{height: "25vh"}}>
+                                    <Container className="d-flex justify-content-center align-items-center pb-5">
                                         <Row>
 
                                         {project.techStack.map((tech) => (
@@ -203,26 +212,27 @@ export const Projects = () => {
                                     
                                     </Container>
 
-                                    <Card.Footer>
-                                        <Container className="d-flex justify-content-center align-items-end ">
-                                            {project.liveLink !== "" ? (
-                                                <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
-                                                ):(
-                                                    <></>
-                                                    )}
-                                            <Link href="/construction" className="projectLink">Read Case Study</Link>
-                                        </Container>
-                                        <Container className="d-flex justify-content-center align-items-center px-3 py-3">
-                                            <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
-                                                <AiFillGithub size={"2em"}/>
-                                                <span className="visually-hidden">GitHub Repository</span>
-                                            </a>
-                                        </Container>
-
-                                    </Card.Footer>
                                   
                                 </Card.Body>
+                                <Card.Footer>
+                                    <Container className="d-flex justify-content-center align-items-end ">
+                                        {project.liveLink !== "" ? (
+                                            <a href={project.liveLink} target="_blank" rel="noreferrer" className="projectLink px-3" title="Visit Live Site. Will open new tab">View Live</a>
+                                            ):(
+                                                <></>
+                                                )}
+                                        <Link href="/construction" className="projectLink">Case Study</Link>
+                                    </Container>
+                                    <Container className="d-flex justify-content-center align-items-center px-3 py-3">
+                                        <a href={project.gitHubLink} target="_blank" rel="noreferrer" className="projectLink" title="Visit GitHub Repo. Will open new tab">
+                                            <AiFillGithub size={"2em"}/>
+                                            <span className="visually-hidden">GitHub Repository</span>
+                                        </a>
+                                    </Container>
+
+                                </Card.Footer>
                             </Card>
+                            </motion.div>
                             </Col>
                         ))}
 
