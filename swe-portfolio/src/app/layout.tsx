@@ -30,6 +30,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
        <meta name="google-site-verification" content="S_Z2QerK8OFX3w2oeL5oEgr7iHKNgP-UmsZyCyll_dQ" />
+       <meta property="og:image" content="swePortfolio.png"/>
       </head>
       
       <body className={inter.className}>
